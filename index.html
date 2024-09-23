@@ -35,9 +35,9 @@
 
         <!-- donation & history button start -->
         <div class="text-center mt-10 space-x-5">
-            <a href="index.html" class="font-bold bg-[#B4F461] lg:py-3 lg:px-7 py-1 px-3 rounded-md hover:bg-[#9bd84b]">Donation</a>
+            <button id="donation_tab" class="font-bold bg-[#B4F461] lg:py-3 lg:px-7 py-1 px-3 rounded-md hover:bg-[#9bd84b]">Donation</button>
             
-            <a href="history.html" class="font-bold  lg:py-3 lg:px-7 py-1 px-3 border-[1px] rounded-md hover:bg-[#9bd84b]">Hisotry</a>
+            <button id="history_tab" class="font-bold  lg:py-3 lg:px-7 py-1 px-3 border-[1px] rounded-md hover:bg-[#9bd84b]">History</button>
         </div>
         <!-- donation & history button end -->
     </header>
@@ -50,7 +50,7 @@
     <main class="">
         <!-- donation cards start -->
 
-        <div class="mx-5 lg:mx-0 mb-10">
+        <div id="donation_cards" class=" mx-5 lg:mx-0 mb-10">
             <!-- card-1 -->
             <div class="lg:flex gap-5 space-y-5 lg:space-y-0 max-w-[1200px] border-[1px] rounded-xl mx-auto p-5 mt-10 ">
                 <img class="" src="assets/noakhali.png" alt="">
@@ -178,6 +178,12 @@
 
 
         <!-- donation cards end -->
+
+        <!-- history section start -->
+         <div id="history_list">
+            
+         </div>
+        <!-- history section end -->
     </main>
     <!-- main sec end -->
 
@@ -189,6 +195,8 @@
 <script src="js/feni_donation.js"></script>
 <script src="js/quota_donation.js"></script>
 <script src="js/function.js"></script>
+<script src="js/tabs.js"></script>
+
 <!-- <script src="js/function.js"></script> -->
 </body>
 

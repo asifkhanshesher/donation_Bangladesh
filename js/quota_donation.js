@@ -9,7 +9,7 @@ document
     const balance = getInputNumberById("quota_account_balance");
     const mainBalance = getInputNumberById("main_balance");
 
-    if (isNaN(addMoney)) {
+    if (isNaN(addMoney) || addMoney === "") {
       alert("Failed to Donate, Please insert correct amount!");
       return;
     }
@@ -32,8 +32,8 @@ document
       return;
     } 
     else {
-      const modal = document.getElementById("my_modal");
-      modal.showModal();
+      const myModal = document.getElementById("my_modal");
+      myModal.showModal();
     }
 
     // added new Balance in UI...
@@ -41,4 +41,21 @@ document
 
     // minus from main balance...
     document.getElementById("main_balance").innerText = neewBalance;
+
+
+
+
+
+    // history List added
+    const historyList = document.createElement('div');
+    historyList.className = ' gap-5 space-y-5 lg:space-y-0 max-w-[1200px] border-[1px] rounded-xl mx-auto p-5 mt-10';
+
+    historyList.innerHTML = `
+
+      <p class="font-bold mb-2">${addMoneyNumber} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh.</p>
+      <p>Date: ${new Date().toDateString()} Time: ${new Date().toLocaleTimeString()} </p>
+    
+    `
+    const historyContainer = document.getElementById('history_list');
+    historyContainer.insertBefore(historyList, historyContainer.firstChild);
   });
