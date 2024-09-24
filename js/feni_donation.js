@@ -45,7 +45,7 @@ document
 
     // history List added
     const historyList = document.createElement('div');
-    historyList.className = ' gap-5 space-y-5 lg:space-y-0 max-w-[1200px] border-[1px] rounded-xl mx-auto p-5 mt-10';
+    historyList.className = ' gap-5 space-y-5 lg:space-y-0 max-w-[1200px] border-[1px] rounded-xl mx-auto p-5 mt-10 my-10';
 
     historyList.innerHTML = `
 
