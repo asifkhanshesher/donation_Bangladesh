@@ -54,7 +54,7 @@ document
     historyList.innerHTML = `
 
       <p class="font-bold mb-2">${addMoneyNumber} Taka is Donated for Flood Relief in Noakhali,Bangladesh.</p>
-      <p>Date: ${new Date().toDateString()} Time: ${new Date().toLocaleTimeString()} </p>
+      <p>Date: ${new Date().toString()} </p>
     
     `;
     const historyContainer = document.getElementById("history_list");
